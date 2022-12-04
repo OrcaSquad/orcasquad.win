@@ -6,7 +6,6 @@ const HeadSection = () => {
         <Head>
             <title>OrcaSquad</title>
             <meta name="description" content="OrcaSquad Website" />
-
             <link rel="icon" href="/favicon.ico" />
         </Head>
     );
@@ -15,7 +14,22 @@ const HeadSection = () => {
 const Header = () => {
     return (
         <header>
-            <h1>OrcaSquad Website</h1>
+            <div className="wrapper">
+                <a href="#">OrcaSquad</a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Discord</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
     );
 };
