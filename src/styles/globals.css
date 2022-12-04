@@ -4,6 +4,10 @@
     --secondary-color: #ffffff;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     padding: 0;
@@ -12,8 +16,8 @@ body {
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-* {
-    box-sizing: border-box;
+main {
+    min-height: calc(100vh - 250px);
 }
 
 /* Link Styles */
@@ -28,6 +32,7 @@ a:hover {
 
 /* Header */
 header {
+    height: 150px;
     position: relative;
     background: var(--primary-color);
 }
@@ -56,4 +61,18 @@ nav ul li a {
     display: block;
     padding: 1.5rem 1rem;
     font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: var(--primary-color);
+    padding: 0.5% 0;
+}
+
+footer h3 {
+    color: var(--secondary-color);
 }

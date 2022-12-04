@@ -35,7 +35,11 @@ const Header = () => {
 };
 
 const Footer = () => {
-    return <h3>© 2022 OrcaSquad</h3>;
+    return (
+        <footer>
+            <h3>© 2022 OrcaSquad</h3>
+        </footer>
+    );
 };
 
 const Layout = ({ children }) => {
@@ -43,7 +47,7 @@ const Layout = ({ children }) => {
         <>
             <HeadSection />
             <Header />
-            {children}
+            <main>{children}</main>
             <Footer />
         </>
     );
