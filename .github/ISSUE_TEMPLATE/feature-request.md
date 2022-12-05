@@ -1,8 +1,8 @@
 ---
 name: Feature Request
 about: Request a new website feature to be implemented
-title: ''
-labels: ''
+title: 'FEATURE REQUEST: '
+labels: enhancement
 assignees: ''
 
 ---
