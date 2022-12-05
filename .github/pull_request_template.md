@@ -20,6 +20,4 @@ Why did you submit this PR? What are its benefits? - Use Issue Description as in
 
 > This will link the PR to the relevant issue so merging the PR with automatically close the issue. Also, it helps others discover which issues have open PRs. **Note**: Don't change any of the wording in the line below or it won't work.
 
-This closes #issue_number
-
-> See this [PR](https://github.com/MLH-Fellowship/pod-3.1.3-portfolio/pull/13) for an example
+This closes #issue_number.
