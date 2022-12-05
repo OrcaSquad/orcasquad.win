@@ -11,7 +11,6 @@
 .header {
     position: relative;
     background: #ececec;
-    border-bottom: solid 0.5px #007bff;
 }
 
 .header a {
@@ -45,25 +44,6 @@
     font-size: 1rem;
 }
 
-.nav button {
-    height: 10%;
-    padding: 0.5rem 1.5rem;
-    border-radius: 7.5px;
-    background: #007bff;
-    color: #ffffff;
-    border: none;
-    font-size: 1rem;
-}
-
-.nav button:hover {
-    cursor: pointer;
-}
-
-.nav button:first-of-type {
-    margin: 0 1.5rem;
-    background: #ff6509;
-}
-
 @media (max-width: 669px) {
     .wrapper {
         display: block;
@@ -86,4 +66,3 @@
         padding-bottom: 1.5rem;
     }
 }
-

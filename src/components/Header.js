@@ -20,14 +20,9 @@ export default function Header() {
                                 <a href="#">Discord</a>
                             </li>
                         </ul>
-                        <div className={styles.buttons}>
-                            <button>Sign In</button>
-                            <button>Log In</button>
-                        </div>
                     </nav>
                 </div>
             </header>
         </div>
     );
 }
-
