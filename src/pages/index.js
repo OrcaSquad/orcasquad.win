@@ -9,11 +9,11 @@ export default function Home() {
         <Head>
             {/* SEARCH ENGINE RELATIVE META */}
             <title>Orca Squad</title>
-            <meta name="description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major Leagu Hacking (MLH)"/>
+            <meta name="description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major League Hacking (MLH)"/>
             
             {/* OPEN GRAPH META */}
             <meta property="og:title" content="Orca Squad"/>
-            <meta property="og:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major Leagu Hacking (MLH)"/>
+            <meta property="og:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major League Hacking (MLH)"/>
             <meta property="og:image" content=" "/>
             <meta property="og:url" content="https://orcasquad.win"/>
             <meta property="og:site_name" content="Orca Squad"/>
@@ -23,7 +23,7 @@ export default function Home() {
             <meta name="twitter:card" content="summary"/>
             <meta name="twitter:site" content="@immattdavison"/>
             <meta name="twitter:title" content="Orca Squad"/>
-            <meta name="twitter:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major Leagu Hacking (MLH)"/>
+            <meta name="twitter:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major League Hacking (MLH)"/>
             <meta name="twitter:image" content=" "/>
 
             {/* FAVICON */}
