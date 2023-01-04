@@ -10,12 +10,12 @@
 
 .header {
     position: relative;
-    background: #ececec;
+    background: var(--os-primary-color);
 }
 
 .header a {
     font-size: 1.5rem;
-    color: #232323;
+    color: var(--os-secondary-color);
     text-decoration: none;
 }
 
