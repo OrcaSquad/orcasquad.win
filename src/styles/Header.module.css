@@ -23,6 +23,12 @@
     text-decoration: underline;
 }
 
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .title {
     font-weight: bold;
 }
@@ -66,3 +72,4 @@
         padding-bottom: 1.5rem;
     }
 }
+
