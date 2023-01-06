@@ -1,13 +1,22 @@
 import styles from "../styles/Header.module.css";
+import Image from "next/image";
 
 export default function Header() {
     return (
         <div>
             <header className={styles.header}>
                 <div className={styles.wrapper}>
-                    <a className={styles.title} href="#">
-                        OrcaSquad
-                    </a>
+                    <div className={styles.logo}>
+                        <Image
+                            src="/assets/logo.svg"
+                            alt="OrcaSquad Logo"
+                            width={150}
+                            height={100}
+                        />
+                        <a className={styles.title} href="#">
+                            OrcaSquad
+                        </a>
+                    </div>
                     <nav className={styles.nav}>
                         <ul>
                             <li>
@@ -26,3 +35,4 @@ export default function Header() {
         </div>
     );
 }
+
