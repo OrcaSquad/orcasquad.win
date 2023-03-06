@@ -1,16 +1,51 @@
-:root {
-    --os-primary-color: #00234b;
-    --os-secondary-color: #ffffff;
+:root{
+    --os-bg-color: rgba(0, 35, 75, 1);
+    --os-bg-color-translucent: rgba(0, 35, 75, 0.5);
+    --os-bg-color-dull: rgba(0, 55, 95, 1);
+    --os-bg-color-dull-translucent: rgba(0, 55, 95, 0.5);
+    --os-text: rgba(235, 235, 235, 1);
+    --os-text-dull: rgba(195, 195, 195, 1);
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 560px;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 980px;
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1185px;
+        width: 100%;
+    }
 }
