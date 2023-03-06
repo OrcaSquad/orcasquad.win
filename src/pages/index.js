@@ -13,8 +13,8 @@ export default function Home() {
             
             {/* OPEN GRAPH META */}
             <meta property="og:title" content="Orca Squad"/>
-            <meta property="og:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major Leagu Hacking (MLH)"/>
-            <meta property="og:image" content=" "/>
+            <meta property="og:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major League Hacking (MLH)"/>
+            <meta property="og:image" content="https://orcasquad.win/assets/logo.png"/>
             <meta property="og:url" content="https://orcasquad.win"/>
             <meta property="og:site_name" content="Orca Squad"/>
             <meta property="og:type" content="website"/>
@@ -24,14 +24,13 @@ export default function Home() {
             <meta name="twitter:site" content="@immattdavison"/>
             <meta name="twitter:title" content="Orca Squad"/>
             <meta name="twitter:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major Leagu Hacking (MLH)"/>
-            <meta name="twitter:image" content=" "/>
+            <meta name="twitter:image" content="https://orcasquad.win/assets/logo.png"/>
 
             {/* FAVICON */}
             <link rel="icon" href="/favicon.ico" />
 
         </Head>
-        <Header>
-        </Header>
+        <Header/>
 
         </div>
     )
