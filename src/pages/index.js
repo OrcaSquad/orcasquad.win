@@ -13,7 +13,7 @@ export default function Home() {
             
             {/* OPEN GRAPH META */}
             <meta property="og:title" content="Orca Squad"/>
-            <meta property="og:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major Leagu Hacking (MLH)"/>
+            <meta property="og:description" content="Join Orca Squad, one of the leading Global Hack Week Guilds with Major League Hacking (MLH)"/>
             <meta property="og:image" content="https://orcasquad.win/assets/logo.png"/>
             <meta property="og:url" content="https://orcasquad.win"/>
             <meta property="og:site_name" content="Orca Squad"/>
