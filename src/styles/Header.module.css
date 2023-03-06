@@ -1,75 +1,129 @@
-/* Header */
-.wrapper {
+.header{
+    top: 0;
     display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+    background-color: var(--os-bg-color);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s;
+}
+.nav{
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1140px;
-    padding: 0 1rem;
-    margin: auto;
+    width: 100%;
 }
 
-.header {
-    position: relative;
-    background: var(--os-primary-color);
+.logo{
+    width: 5rem;
 }
 
-.header a {
-    font-size: 1.5rem;
-    color: var(--os-secondary-color);
+.logoLink{
+    display: flex;
+    align-items: center;
     text-decoration: none;
 }
 
-.header a:hover {
-    text-decoration: underline;
-}
-
-.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.nav {
+div:has( > .logoLink > .logo){
+    padding-block: .75rem;
     display: flex;
     align-items: center;
 }
 
-.nav ul {
+.navToggleContainer{
+    display: none;
+}
+
+.navToggle{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--os-text);
+    line-height: 2rem;
+    width: 100%;
+    padding: 0;
+}
+
+.navList{
     display: flex;
-    list-style-type: none;
-    padding-left: 0;
+    align-items: center;
+    list-style: none;
+    padding-inline: 0;
+    padding-block: 1.2em;
+    margin: 0;
+    gap: 1.2rem;
 }
 
-.nav ul li a {
-    display: block;
-    padding: 1.5rem 1rem;
-    font-size: 1rem;
+.navLink{
+    color: var(--os-text-dull);
+    text-decoration: none;
+    /* padding: 0 1rem; */
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-@media (max-width: 669px) {
-    .wrapper {
+.navLink:hover{
+    color: var(--os-text);
+}
+
+.navButton{
+    border: none;
+    outline: none;
+    background: var(--os-text);
+    color: var(--os-bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.navButton:hover{
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
+    background-color: var(--os-text-dull);
+    scale: 1.05;
+}
+
+@media (max-width: 768px) {
+    .navToggleContainer{
         display: block;
+        transition: all 0.5s;
     }
-
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
+    .navListContainer{
+        transition: all .15s ease-in-out;
+        min-width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
     }
-
-    .title {
+    .navListContainerOpen{
+        transition: all .35s ease-in-out;
+        min-width: 100%;
+        max-height: 100vh;
+    }
+    .navList{
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding-block: 1.2rem 2rem; 
+    }
+    .navItem{
+        width: 100%;
+    }
+    .navLink{
+        padding: .5rem 0;
         display: block;
-        text-align: center;
-        padding-top: 1.5rem;
+        width: 100%;
     }
 }
-
-@media (max-width: 548px) {
-    .header {
-        padding-bottom: 1.5rem;
-    }
-}
-
